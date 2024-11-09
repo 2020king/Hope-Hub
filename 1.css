@@ -1,0 +1,81 @@
+/* Стиль для легкого случая - page1.html */
+body {
+    background-color: #f0f8ff; /* Светлый фон */
+    color: #333; /* Темно-серый текст для контраста */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4CAF50; /* Зеленый цвет для позитивного настроя */
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #2c3e50; /* Темно-синий цвет для подзаголовков */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.content {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    p, .button {
+        font-size: 16px;
+    }
+}

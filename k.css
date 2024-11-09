@@ -1,0 +1,119 @@
+/* Главная страница - index.html */
+body {
+    background-color: #fafafa; /* Светлый фон для главной страницы */
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #4CAF50; /* Зеленый цвет для заголовка */
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #2c3e50; /* Темно-синий для подзаголовков */
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стили для формы вопросов */
+.question-container {
+    margin-top: 30px;
+}
+
+.question-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Стили для кнопок перехода */
+.test-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.test-buttons a {
+    width: 40%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #FF9800;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.test-buttons a:hover {
+    background-color: #f57c00;
+    transform: scale(1.05);
+}
+
+.test-buttons a:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    p, .button, .test-buttons a {
+        font-size: 16px;
+    }
+}
